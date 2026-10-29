@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebijakan Privasi (Privacy Policy) — Presora</title>
+  <meta name="description" content="Kebijakan Privasi resmi aplikasi Presora. Penjelasan lengkap mengenai pemrosesan data, integrasi Google Sign-In, Google Sheets API, penyimpanan lokal, dan perlindungan privasi pengguna.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://presora.pages.dev/privacy/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Kebijakan Privasi (Privacy Policy) — Presora">
+  <meta property="og:description" content="Penjelasan transparan mengenai bagaimana Presora mengelola autentikasi Google OAuth 2.0, Google Sheets API, dan menjaga privasi pengguna.">
+  <meta property="og:url" content="https://presora.pages.dev/privacy/">
+  <meta property="og:image" content="/assets/images/launcher_logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header Navigasi -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="/" class="brand-link" aria-label="Presora Beranda">
+        <img src="/assets/images/splash_logo.png" alt="Logo Presora" class="brand-logo-img">
+        <div class="brand-name">Presora<span>.</span></div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navigasi Utama">
+        <a href="/" class="nav-link">Beranda</a>
+        <a href="/#fitur" class="nav-link">Fitur</a>
+        <a href="/#integrasi-google" class="nav-link">Integrasi Google</a>
+        <a href="/privacy/" class="nav-link active">Privacy Policy</a>
+        <a href="/terms/" class="nav-link">Terms of Service</a>
+        <a href="/contact/" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="/contact/" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Bantuan Developer</a>
+      </div>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Buka Menu" aria-expanded="false">
+        &#9776;
+      </button>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-links">
+        <a href="/" class="nav-link">Beranda</a>
+        <a href="/#fitur" class="nav-link">Fitur Aplikasi</a>
+        <a href="/#integrasi-google" class="nav-link">Integrasi Google Sheets</a>
+        <a href="/privacy/" class="nav-link active">Kebijakan Privasi (Privacy Policy)</a>
+        <a href="/terms/" class="nav-link">Syarat Layanan (Terms of Service)</a>
+        <a href="/contact/" class="nav-link">Kontak Dukungan</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Legal Header -->
+  <section class="legal-page-header">
+    <div class="container">
+      <div class="badge badge-primary" style="margin-bottom: 12px;">Dokumen Hukum & Kepatuhan</div>
+      <h1 style="font-size: 2.5rem; font-weight: 800; letter-spacing: -0.025em; margin-bottom: 12px;">Kebijakan Privasi (Privacy Policy)</h1>
+      <p style="font-size: 1.05rem; color: var(--text-secondary); max-width: 800px;">
+        Kebijakan Privasi ini menjelaskan secara transparan dan jujur mengenai bagaimana aplikasi <strong>Presora</strong> mengumpulkan, memproses, menyimpan, dan melindungi informasi Anda serta data peserta saat menggunakan aplikasi dan integrasi layanan Google APIs.
+      </p>
+      <div class="legal-meta">
+        <div><strong>Tanggal Berlaku:</strong> <span data-config="policyDates.effectiveDate">29 Oktober 2026</span></div>
+        <div><strong>Pembaruan Terakhir:</strong> <span data-config="policyDates.lastUpdated">29 Oktober 2026</span></div>
+        <div><strong>Versi:</strong> 1.0.0</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Legal Content Layout -->
+  <main class="container section-spacing" style="padding-top: 0;">
+    <div class="legal-layout">
+      <!-- Sidebar Table of Contents -->
+      <aside class="legal-toc">
+        <div class="legal-toc-title">Daftar Isi Kebijakan</div>
+        <ul class="legal-toc-list">
+          <li><a href="#pengantar" class="legal-toc-link">1. Pengantar & Identitas Aplikasi</a></li>
+          <li><a href="#data-diproses" class="legal-toc-link">2. Data yang Kami Proses</a></li>
+          <li><a href="#google-oauth" class="legal-toc-link">3. Integrasi Akun Google & OAuth</a></li>
+          <li><a href="#tujuan-data" class="legal-toc-link">4. Tujuan Penggunaan Data</a></li>
+          <li><a href="#penyimpanan-keamanan" class="legal-toc-link">5. Penyimpanan & Keamanan Token</a></li>
+          <li><a href="#kontrol-spreadsheet" class="legal-toc-link">6. Kontrol Atas Spreadsheet</a></li>
+          <li><a href="#larangan-jual-data" class="legal-toc-link">7. Larangan Penjualan & Pihak Ketiga</a></li>
+          <li><a href="#retensi-penghapusan" class="legal-toc-link">8. Retensi & Penghapusan Data</a></li>
+          <li><a href="#pencabutan-izin" class="legal-toc-link">9. Cara Mencabut Izin Google</a></li>
+          <li><a href="#pembaruan-kebijakan" class="legal-toc-link">10. Pembaruan Kebijakan</a></li>
+          <li><a href="#kontak-developer" class="legal-toc-link">11. Kontak Pengembang</a></li>
+        </ul>
+      </aside>
+
+      <!-- Legal Document Body -->
+      <article class="legal-content">
+
+        <section id="pengantar">
+          <h2>1. Pengantar & Identitas Aplikasi</h2>
+          <p>
+            Selamat datang di <strong>Presora</strong> ("Aplikasi", "Kami", atau "Pengembang"). Presora adalah aplikasi presensi digital berbasis mobile (Flutter) yang diciptakan oleh <strong>Avrizal Rendi Prayoga</strong> untuk membantu individu, guru, pembina ekstrakurikuler, komunitas, panitia kegiatan, dan kelompok kerja dalam mengelola daftar peserta dan mencatat kehadiran secara terstruktur.
+          </p>
+          <p>
+            Kami berkomitmen penuh untuk menghormati dan melindungi privasi setiap pengguna. Kebijakan Privasi ini dirancang agar mudah dipahami, sesuai dengan cara kerja nyata kode aplikasi kami, dan memenuhi standar kepatuhan <strong>Google API Services User Data Policy</strong>, termasuk persyaratan <strong>Limited Use</strong>.
+          </p>
+        </section>
+
+        <section id="data-diproses">
+          <h2>2. Data yang Kami Proses</h2>
+          <p>Untuk mengoperasikan fungsinya, Presora memproses kategori data berikut:</p>
+          
+          <h3>A. Informasi Profil Google</h3>
+          <p>
+            Saat Anda melakukan login melalui Google Sign-In, aplikasi menerima informasi profil dasar yang diizinkan oleh akun Google Anda:
+          </p>
+          <ul>
+            <li><strong>Alamat Email:</strong> Digunakan untuk mengidentifikasi akun Anda dan menampilkan status akun yang aktif di aplikasi.</li>
+            <li><strong>Nama Tampilan (Display Name):</strong> Digunakan untuk menyapa dan menampilkan identitas pengguna di header aplikasi.</li>
+            <li><strong>Foto Profil (Photo URL):</strong> Digunakan sebagai avatar visual di antarmuka aplikasi jika tersedia.</li>
+          </ul>
+
+          <h3>B. Data Peserta (Students / Members)</h3>
+          <p>
+            Data peserta yang dimasukkan oleh Anda ke dalam aplikasi, meliputi:
+          </p>
+          <ul>
+            <li>ID unik peserta (UUID yang dibuat oleh aplikasi).</li>
+            <li>Nomor Induk Siswa/Anggota (NIS/ID).</li>
+            <li>Nama lengkap peserta.</li>
+            <li>Kelas, divisi, atau nama kelompok.</li>
+            <li>Nomor urut pemanggilan.</li>
+            <li>Waktu pembuatan dan pembaruan data.</li>
+          </ul>
+
+          <h3>C. Catatan Presensi (Attendance Logs)</h3>
+          <p>
+            Rekaman aktivitas presensi harian, meliputi:
+          </p>
+          <ul>
+            <li>ID unik absensi.</li>
+            <li>Referensi ID peserta.</li>
+            <li>Tanggal kegiatan presensi (format <code>YYYY-MM-DD</code>).</li>
+            <li>Status kehadiran: <code>Hadir (H)</code>, <code>Sakit (S)</code>, <code>Izin (I)</code>, atau <code>Alfa (A)</code>.</li>
+            <li>Waktu rekaman dicatat.</li>
+          </ul>
+
+          <h3>D. Konfigurasi Operasional</h3>
+          <p>
+            Pengaturan hari operasional presensi (misal: Senin, Rabu) dan status validasi lembar kerja yang tersimpan dalam tab <code>AppConfig</code>.
+          </p>
+        </section>
+
+        <section id="google-oauth">
+          <h2>3. Integrasi Akun Google & Cakupan Izin OAuth 2.0</h2>
+          <p>
+            Presora menggunakan protokol resmi <strong>Google OAuth 2.0</strong> untuk mengautentikasi pengguna dan menghubungkan aplikasi ke Google Sheets dan Google Drive milik pengguna.
+          </p>
+          <p>
+            Aplikasi meminta izin spesifik berikut (Scopes):
+          </p>
+          <ul>
+            <li>
+              <strong><code>email</code></strong>:
+              Memverifikasi identitas pengguna dan menghubungkan preferensi pengguna pada perangkat secara lokal.
+            </li>
+            <li>
+              <strong><code>https://www.googleapis.com/auth/spreadsheets</code></strong>:
+              Membaca, membuat sheet (Students, Attendance, AppConfig), dan menulis baris kehadiran ke Google Spreadsheet yang Anda pilih atau buat. Izin ini mutlak diperlukan untuk fungsionalitas inti aplikasi.
+            </li>
+            <li>
+              <strong><code>https://www.googleapis.com/auth/drive.file</code></strong>:
+              Membuat dan mengelola file spreadsheet baru di Google Drive Anda jika Anda memilih fitur pembuatan spreadsheet otomatis melalui aplikasi.
+            </li>
+            <li>
+              <strong><code>https://www.googleapis.com/auth/drive.readonly</code></strong>:
+              Membaca daftar file spreadsheet yang ada di Google Drive Anda secara read-only agar Anda dapat memilih spreadsheet mana yang ingin dihubungkan ke Presora.
+            </li>
+          </ul>
+
+          <div class="highlight-box">
+            <strong>Pernyataan Kepatuhan Google Limited Use:</strong><br>
+            Penggunaan dan transfer data pengguna Google yang diterima oleh Presora dari Google APIs ke aplikasi lain tunduk dan mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #FFFFFF;">Google API Services User Data Policy</a>, termasuk ketentuan <strong>Limited Use</strong>. Data dari Google APIs hanya digunakan untuk menyediakan fungsionalitas presensi yang diminta langsung oleh pengguna.
+          </div>
+        </section>
+
+        <section id="tujuan-data">
+          <h2>4. Tujuan Penggunaan Setiap Jenis Data</h2>
+          <p>Kami menggunakan data yang disebutkan di atas semata-mata untuk:</p>
+          <ol>
+            <li>Melakukan otentikasi akun Anda tanpa perlu membuat kata sandi baru.</li>
+            <li>Menampilkan daftar spreadsheet Anda agar Anda dapat memilih target penyimpanan.</li>
+            <li>Mencatat kehadiran peserta secara real-time dan menyimpannya langsung ke spreadsheet pilihan Anda.</li>
+            <li>Menampilkan rekapitulasi kehadiran dan riwayat presensi di layar aplikasi.</li>
+            <li>Mencegah duplikasi data absensi pada tanggal dan peserta yang sama.</li>
+          </ol>
+          <p>
+            Kami <strong>tidak pernah</strong> menggunakan data Anda untuk keperluan pemasaran, profiling iklan, analitik pihak ketiga yang invasif, atau tujuan komersial di luar fungsi inti aplikasi.
+          </p>
+        </section>
+
+        <section id="penyimpanan-keamanan">
+          <h2>5. Cara Data Disimpan, Diproses, dan Perlindungan Token</h2>
+          <p>
+            Sesuai arsitektur kode aplikasi Presora yang dapat diverifikasi:
+          </p>
+          <ul>
+            <li>
+              <strong>Tidak Ada Server Perantara (No Backend / No Middleman Database):</strong><br>
+              Aplikasi Presora tidak mengoperasikan server backend atau database eksternal milik developer. Seluruh komunikasi data terjadi secara langsung (peer-to-Google) antara aplikasi mobile Anda dan endpoint resmi Google APIs (<code>sheets.googleapis.com</code> dan <code>www.googleapis.com/drive</code>) menggunakan protokol enkripsi aman <strong>HTTPS/TLS</strong>.
+            </li>
+            <li>
+              <strong>Penyimpanan Data di Google Drive Pribadi:</strong><br>
+              Data peserta, log presensi, dan konfigurasi disimpan di dalam spreadsheet di Google Drive akun Google Anda sendiri.
+            </li>
+            <li>
+              <strong>Penyimpanan dan Perlindungan Token OAuth:</strong><br>
+              Token autentikasi Google OAuth dikelola langsung oleh pustaka resmi Google Sign-In dan Google Play Services di perangkat Android Anda. Token akses sementara dan metadata profil lokal disimpan dalam penyimpanan internal yang terisolasi (Android <code>SharedPreferences</code>). Penyimpanan ini dilindungi oleh mekanisme sandbox sistem operasi Android sehingga tidak dapat diakses oleh aplikasi lain pada perangkat.
+            </li>
+            <li>
+              Token otorisasi <strong>tidak pernah dikirimkan</strong> ke server mana pun selain server otorisasi resmi Google.
+            </li>
+          </ul>
+        </section>
+
+        <section id="kontrol-spreadsheet">
+          <h2>6. Penjelasan Bahwa Spreadsheet Dipilih dan Dikelola oleh Pengguna</h2>
+          <p>
+            Anda memiliki kontrol mutlak atas spreadsheet yang digunakan:
+          </p>
+          <ul>
+            <li>Anda bebas memilih spreadsheet yang sudah ada di akun Google Drive Anda atau meminta aplikasi membuatkan spreadsheet baru.</li>
+            <li>Aplikasi hanya beroperasi pada spreadsheet yang secara eksplisit Anda pilih atau hubungkan.</li>
+            <li>Anda dapat membuka, mengunduh, mengedit, membagikan hak akses (share), atau menghapus spreadsheet tersebut kapan saja langsung melalui web Google Drive / Google Sheets Anda tanpa bergantung pada Presora.</li>
+          </ul>
+        </section>
+
+        <section id="larangan-jual-data">
+          <h2>7. Larangan Penjualan Data & Pengungkapan Pihak Ketiga</h2>
+          <p>
+            Kami menegaskan prinsip-prinsip mutlak berikut:
+          </p>
+          <ul>
+            <li><strong>Data Tidak Dijual:</strong> Kami TIDAK PERNAH menjual, menyewakan, memperdagangkan, atau memonetisasi data pengguna, data peserta, rekaman kehadiran, maupun informasi profil Google kepada pihak mana pun.</li>
+            <li><strong>Tidak Ada Jaringan Periklanan:</strong> Aplikasi Presora tidak memuat Software Development Kit (SDK) iklan, pelacak perilaku (behavioral trackers), atau broker data.</li>
+            <li><strong>Pihak Ketiga yang Digunakan:</strong> Satu-satunya layanan pihak ketiga yang berinteraksi dengan data aplikasi adalah <strong>Google APIs (Google LLC)</strong> yang Anda otorisasi secara sadar untuk penyimpanan data spreadsheet dan autentikasi.</li>
+          </ul>
+        </section>
+
+        <section id="retensi-penghapusan">
+          <h2>8. Retensi Data, Penghapusan Data, & Pembersihan Cache</h2>
+          <p>
+            Karena data Anda tersimpan di Google Drive milik Anda sendiri:
+          </p>
+          <ul>
+            <li><strong>Retensi Data:</strong> Data peserta dan catatan presensi tersimpan selama file spreadsheet tersebut masih Anda pertahankan di Google Drive Anda.</li>
+            <li><strong>Penghapusan Data:</strong> Anda dapat menghapus baris data peserta atau rekaman presensi langsung dari aplikasi, atau menghapus file spreadsheet tersebut seutuhnya dari Google Drive Anda.</li>
+            <li><strong>Fitur Logout / Keluar:</strong> Ketika Anda menekan tombol "Keluar" (Logout) di aplikasi Presora, seluruh token sesi, cache email, dan metadata profil di penyimpanan lokal perangkat (SharedPreferences) akan langsung dihapus bersih secara permanen.</li>
+          </ul>
+        </section>
+
+        <section id="pencabutan-izin">
+          <h2>9. Cara Mencabut Izin Akses Akun Google (Revoking Permissions)</h2>
+          <p>
+            Anda dapat memutus atau mencabut hak akses Presora ke akun Google Anda kapan saja melalui langkah berikut:
+          </p>
+          <ol>
+            <li>Buka halaman pengaturan keamanan akun Google Anda di: <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer" style="color: var(--primary-blue); font-weight: 600;">https://myaccount.google.com/permissions</a>.</li>
+            <li>Cari aplikasi <strong>Presora</strong> pada daftar "Aplikasi pihak ketiga yang memiliki akses ke akun Anda".</li>
+            <li>Klik pada Presora lalu pilih tombol <strong>"Hapus Akses" (Remove Access)</strong>.</li>
+            <li>Setelah akses dicabut, aplikasi Presora tidak lagi dapat membaca maupun menulis ke Google Sheets Anda hingga Anda memberikan izin kembali secara sadar.</li>
+          </ol>
+        </section>
+
+        <section id="pembaruan-kebijakan">
+          <h2>10. Pembaruan Kebijakan Privasi</h2>
+          <p>
+            Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu untuk menyesuaikan dengan pembaruan fitur aplikasi, perubahan hukum, atau penyesuaian regulasi Google API Services. Setiap pembaruan akan dipublikasikan pada halaman web permanen ini dengan memperbarui tanggal "Pembaruan Terakhir" di bagian atas halaman.
+          </p>
+        </section>
+
+        <section id="kontak-developer">
+          <h2>11. Kontak Resmi Pengembang</h2>
+          <p>
+            Apabila Anda memiliki pertanyaan, keluhan, masukan, atau permintaan bantuan terkait Kebijakan Privasi ini dan penanganan data Anda, silakan hubungi pengembang resmi:
+          </p>
+          
+          <div class="contact-item" style="margin-top: 16px;">
+            <div class="contact-item-icon">&#9993;</div>
+            <div class="contact-details">
+              <div class="contact-label">Pengembang & Pemilik Data Privasi</div>
+              <div class="contact-value" data-config="developer.name">Avrizal Rendi Prayoga</div>
+              <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+                Email: <a href="mailto:avrizalrendiprayoga@gmail.com" data-config="developer.supportEmail" style="color: var(--highlight-ice); font-weight: 600;">avrizalrendiprayoga@gmail.com</a>
+              </div>
+            </div>
+            <button type="button" class="copy-btn" onclick="copyEmailToClipboard('avrizalrendiprayoga@gmail.com')">
+              Salin Email
+            </button>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-link" style="margin-bottom: 8px;">
+            <img src="/assets/images/splash_logo.png" alt="Logo Presora" class="brand-logo-img">
+            <div class="brand-name">Presora<span>.</span></div>
+          </div>
+          <p>Attendance, Organized. Aplikasi presensi digital modern terhubung langsung ke Google Sheets & Google Drive milik pengguna.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigasi Halaman</h4>
+          <ul class="footer-links">
+            <li><a href="/" class="footer-link">Beranda Utama</a></li>
+            <li><a href="/#fitur" class="footer-link">Fitur Aplikasi</a></li>
+            <li><a href="/#integrasi-google" class="footer-link">Integrasi Google Sheets</a></li>
+            <li><a href="/contact/" class="footer-link">Kontak Dukungan</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Legal & Kepatuhan</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy/" class="footer-link" style="color: var(--primary-blue);">Kebijakan Privasi (Privacy)</a></li>
+            <li><a href="/terms/" class="footer-link">Syarat Layanan (Terms)</a></li>
+            <li><a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer" class="footer-link">Google Limited Use Policy &nearr;</a></li>
+            <li><a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer" class="footer-link">Kelola Izin Akun Google &nearr;</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Dukungan Pengembang</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">
+            Pengembang: <strong data-config="developer.name" style="color: var(--text-primary);">Avrizal Rendi Prayoga</strong>
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">
+            Email: <a href="mailto:avrizalrendiprayoga@gmail.com" style="color: var(--highlight-ice);">avrizalrendiprayoga@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Presora. Seluruh hak cipta dilindungi undang-undang.
+        </div>
+        <div style="font-size: 0.775rem;">
+          Presora mematuhi Google API Services User Data Policy, termasuk ketentuan Limited Use.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/assets/js/config.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

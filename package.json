@@ -1,0 +1,21 @@
+{
+  "name": "presora-website",
+  "version": "1.0.0",
+  "description": "Official Website for Presora (Attendance, Organized.) - Google OAuth Verification & Branding",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve -l 3000",
+    "start": "npx serve -l 3000",
+    "build": "echo 'Static site ready for Cloudflare Pages (no build step required)'",
+    "test": "node test-links.js"
+  },
+  "keywords": [
+    "presora",
+    "attendance",
+    "flutter",
+    "google-oauth",
+    "google-sheets"
+  ],
+  "author": "Avrizal Rendi Prayoga <avrizalrendiprayoga@gmail.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syarat Layanan (Terms of Service) — Presora</title>
+  <meta name="description" content="Syarat dan Ketentuan Layanan (Terms of Service) resmi aplikasi Presora. Hak, kewajiban pengguna, tanggung jawab data peserta, integrasi Google Sheets, dan ketentuan hukum.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://presora.pages.dev/terms/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Syarat Layanan (Terms of Service) — Presora">
+  <meta property="og:description" content="Syarat dan ketentuan penggunaan aplikasi Presora serta pedoman tanggung jawab pengelolaan data kehadiran.">
+  <meta property="og:url" content="https://presora.pages.dev/terms/">
+  <meta property="og:image" content="/assets/images/launcher_logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header Navigasi -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="/" class="brand-link" aria-label="Presora Beranda">
+        <img src="/assets/images/splash_logo.png" alt="Logo Presora" class="brand-logo-img">
+        <div class="brand-name">Presora<span>.</span></div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navigasi Utama">
+        <a href="/" class="nav-link">Beranda</a>
+        <a href="/#fitur" class="nav-link">Fitur</a>
+        <a href="/#integrasi-google" class="nav-link">Integrasi Google</a>
+        <a href="/privacy/" class="nav-link">Privacy Policy</a>
+        <a href="/terms/" class="nav-link active">Terms of Service</a>
+        <a href="/contact/" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="/contact/" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Bantuan Developer</a>
+      </div>
+
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Buka Menu" aria-expanded="false">
+        &#9776;
+      </button>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-links">
+        <a href="/" class="nav-link">Beranda</a>
+        <a href="/#fitur" class="nav-link">Fitur Aplikasi</a>
+        <a href="/#integrasi-google" class="nav-link">Integrasi Google Sheets</a>
+        <a href="/privacy/" class="nav-link">Kebijakan Privasi (Privacy Policy)</a>
+        <a href="/terms/" class="nav-link active">Syarat Layanan (Terms of Service)</a>
+        <a href="/contact/" class="nav-link">Kontak Dukungan</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Legal Header -->
+  <section class="legal-page-header">
+    <div class="container">
+      <div class="badge badge-primary" style="margin-bottom: 12px;">Ketentuan Penggunaan</div>
+      <h1 style="font-size: 2.5rem; font-weight: 800; letter-spacing: -0.025em; margin-bottom: 12px;">Syarat & Ketentuan Layanan (Terms of Service)</h1>
+      <p style="font-size: 1.05rem; color: var(--text-secondary); max-width: 800px;">
+        Harap membaca Syarat Layanan ini secara saksama sebelum mengunduh, mengakses, atau menggunakan aplikasi <strong>Presora</strong>.
+      </p>
+      <div class="legal-meta">
+        <div><strong>Tanggal Berlaku:</strong> <span data-config="policyDates.effectiveDate">29 Oktober 2026</span></div>
+        <div><strong>Pembaruan Terakhir:</strong> <span data-config="policyDates.lastUpdated">29 Oktober 2026</span></div>
+        <div><strong>Versi:</strong> 1.0.0</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Legal Content Layout -->
+  <main class="container section-spacing" style="padding-top: 0;">
+    <div class="legal-layout">
+      <!-- Sidebar Table of Contents -->
+      <aside class="legal-toc">
+        <div class="legal-toc-title">Daftar Isi Ketentuan</div>
+        <ul class="legal-toc-list">
+          <li><a href="#penerimaan" class="legal-toc-link">1. Penerimaan Ketentuan</a></li>
+          <li><a href="#deskripsi-layanan" class="legal-toc-link">2. Deskripsi Layanan Presora</a></li>
+          <li><a href="#tanggung-jawab-pengguna" class="legal-toc-link">3. Tanggung Jawab Pengguna</a></li>
+          <li><a href="#izin-data-peserta" class="legal-toc-link">4. Kewajiban Izin Data Peserta</a></li>
+          <li><a href="#larangan-aktivitas" class="legal-toc-link">5. Larangan Penggunaan</a></li>
+          <li><a href="#ketergantungan-google" class="legal-toc-link">6. Ketergantungan Layanan Google</a></li>
+          <li><a href="#ketersediaan-perubahan" class="legal-toc-link">7. Ketersediaan & Pembaruan</a></li>
+          <li><a href="#batasan-tanggung-jawab" class="legal-toc-link">8. Batasan Tanggung Jawab</a></li>
+          <li><a href="#kontak-developer" class="legal-toc-link">9. Kontak Pengembang</a></li>
+        </ul>
+      </aside>
+
+      <!-- Legal Document Body -->
+      <article class="legal-content">
+
+        <section id="penerimaan">
+          <h2>1. Penerimaan Ketentuan</h2>
+          <p>
+            Dengan mengunduh, menginstal, atau menggunakan aplikasi <strong>Presora</strong> ("Aplikasi"), Anda menyatakan bahwa Anda telah membaca, memahami, dan menyetujui untuk terikat oleh Syarat dan Ketentuan Layanan ini ("Ketentuan"). Apabila Anda tidak menyetujui salah satu bagian dari Ketentuan ini, Anda tidak diperkenankan untuk menggunakan Aplikasi Presora.
+          </p>
+        </section>
+
+        <section id="deskripsi-layanan">
+          <h2>2. Deskripsi Layanan Presora</h2>
+          <p>
+            Presora adalah aplikasi mobile berbasis Flutter yang menyediakan sarana pencatatan presensi digital bagi perorangan, guru, pembina kegiatan, pengurus komunitas, atau organisasi. Presora berfungsi sebagai klien antarmuka yang mengelola data peserta dan catatan kehadiran dengan menyimpannya langsung ke Google Spreadsheet yang dipilih dan dikontrol oleh pengguna.
+          </p>
+        </section>
+
+        <section id="tanggung-jawab-pengguna">
+          <h2>3. Tanggung Jawab Pengguna atas Akun Google & Spreadsheet</h2>
+          <p>Sebagai pengguna, Anda memahami dan menyetujui bahwa:</p>
+          <ul>
+            <li>Anda bertanggung jawab penuh atas keamanan kredensial akun Google pribadi yang Anda gunakan untuk menghubungkan aplikasi.</li>
+            <li>Anda bertanggung jawab atas pemilihan spreadsheet target di Google Drive Anda. Presora hanya memproses file spreadsheet yang telah Anda tentukan.</li>
+            <li>Anda bertanggung jawab untuk menjaga integritas struktur sheet yang dibuat oleh Presora (tab <code>Students</code>, <code>Attendance</code>, dan <code>AppConfig</code>). Mengubah nama kolom header secara manual di luar format yang didukung dapat mengakibatkan kesalahan sinkronisasi data pada aplikasi.</li>
+            <li>Anda bertanggung jawab untuk melakukan backup secara berkala terhadap file spreadsheet di Google Drive Anda jika diperlukan.</li>
+          </ul>
+        </section>
+
+        <section id="izin-data-peserta">
+          <h2>4. Kewajiban Memiliki Izin untuk Memproses Data Peserta</h2>
+          <p>
+            Presora digunakan untuk mencatat informasi identitas dan rekaman absensi peserta (seperti nama, nomor induk/NIS, kelas, dan status kehadiran).
+          </p>
+          <div class="highlight-box">
+            <strong>Pernyataan Kepatuhan Hukum Privasi Peserta:</strong><br>
+            Anda menyatakan dan menjamin bahwa Anda memiliki dasar hukum yang sah, kewenangan, izin, atau persetujuan yang sah dari instansi, sekolah, organisasi, atau orang tua/wali peserta yang bersangkutan untuk mengumpulkan, mencatat, dan menyimpan data peserta tersebut ke dalam Google Spreadsheet yang Anda kelola.
+          </div>
+        </section>
+
+        <section id="larangan-aktivitas">
+          <h2>5. Larangan Penggunaan (Prohibited Conduct)</h2>
+          <p>Anda dilarang keras untuk:</p>
+          <ul>
+            <li>Menggunakan Presora untuk tujuan yang melanggar hukum, regulasi perlindungan data, atau hak-hak privasi pihak lain.</li>
+            <li>Memanipulasi atau merekayasa alur autentikasi Google OAuth untuk mencoba memperoleh akses tidak sah ke data akun milik orang lain.</li>
+            <li>Melakukan tindakan yang sengaja membebani, mengganggu, atau membanjiri kuota API Google Sheets/Drive hingga mengganggu layanan pihak lain (API abuse).</li>
+            <li>Menyebarkan file berbahaya, malware, atau script perusak melalui spreadsheet yang ditautkan ke aplikasi.</li>
+          </ul>
+        </section>
+
+        <section id="ketergantungan-google">
+          <h2>6. Ketergantungan pada Layanan Google & Koneksi Internet</h2>
+          <p>
+            Presora menggunakan arsitektur tanpa database server mandiri milik developer dan sepenuhnya mengandalkan:
+          </p>
+          <ul>
+            <li>Layanan cloud <strong>Google Cloud Platform</strong>, termasuk <strong>Google Sheets API v4</strong> dan <strong>Google Drive API v3</strong>.</li>
+            <li>Koneksi jaringan internet yang stabil pada perangkat smartphone Anda.</li>
+          </ul>
+          <p>
+            Oleh karena itu, Anda mengakui bahwa kelancaran sinkronisasi data dapat dipengaruhi oleh pemeliharaan sistem Google, pembatasan kuota API akun Google Anda (quota limits), atau gangguan konektivitas jaringan seluler/Wi-Fi Anda di luar kendali pengembang Presora.
+          </p>
+        </section>
+
+        <section id="ketersediaan-perubahan">
+          <h2>7. Ketersediaan Layanan & Modifikasi Fitur</h2>
+          <p>
+            Aplikasi Presora disediakan berdasarkan prinsip <strong>"sebagaimana adanya" (AS IS)</strong> dan <strong>"sebagaimana tersedia" (AS AVAILABLE)</strong> tanpa jaminan apa pun, baik tersurat maupun tersirat.
+          </p>
+          <p>
+            Pengembang berhak untuk memperbarui, meningkatkan, mengubah antarmuka, menyesuaikan mekanisme integrasi API, atau menghentikan fitur tertentu sewaktu-waktu demi perbaikan kualitas atau penyesuaian terhadap kebijakan platform Google.
+          </p>
+        </section>
+
+        <section id="batasan-tanggung-jawab">
+          <h2>8. Batasan Tanggung Jawab (Limitation of Liability)</h2>
+          <p>
+            Sepanjang diizinkan oleh hukum yang berlaku di wilayah Republik Indonesia:
+          </p>
+          <ul>
+            <li>Pengembang Presora tidak bertanggung jawab atas segala kerugian tidak langsung, kerugian insidental, kehilangan data, kegagalan sinkronisasi, atau terhapusnya spreadsheet yang diakibatkan oleh kelalaian pengguna, kegagalan koneksi internet pengguna, atau perubahan kebijakan pada Google Cloud.</li>
+            <li>Tanggung jawab maksimal pengembang kepada pengguna terkait tuntutan apa pun yang timbul dari penggunaan aplikasi ini terbatas pada upaya perbaikan wajar terhadap kode aplikasi (bug fixing).</li>
+          </ul>
+        </section>
+
+        <section id="kontak-developer">
+          <h2>9. Kontak Pengembang & Ketentuan Tambahan</h2>
+          <p>
+            Ketentuan ini diatur dan ditafsirkan sesuai dengan hukum yang berlaku di Republik Indonesia. Apabila ada ketentuan yang dinyatakan tidak sah oleh pengadilan yang berwenang, ketentuan lainnya akan tetap berlaku sepenuhnya.
+          </p>
+          <p>
+            Jika Anda memiliki pertanyaan mengenai Syarat Layanan ini, silakan menghubungi:
+          </p>
+          
+          <div class="contact-item" style="margin-top: 16px;">
+            <div class="contact-item-icon">&#9993;</div>
+            <div class="contact-details">
+              <div class="contact-label">Pengembang Resmi Presora</div>
+              <div class="contact-value" data-config="developer.name">Avrizal Rendi Prayoga</div>
+              <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+                Email: <a href="mailto:avrizalrendiprayoga@gmail.com" data-config="developer.supportEmail" style="color: var(--highlight-ice); font-weight: 600;">avrizalrendiprayoga@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-link" style="margin-bottom: 8px;">
+            <img src="/assets/images/splash_logo.png" alt="Logo Presora" class="brand-logo-img">
+            <div class="brand-name">Presora<span>.</span></div>
+          </div>
+          <p>Attendance, Organized. Aplikasi presensi digital modern terhubung langsung ke Google Sheets & Google Drive milik pengguna.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigasi Halaman</h4>
+          <ul class="footer-links">
+            <li><a href="/" class="footer-link">Beranda Utama</a></li>
+            <li><a href="/#fitur" class="footer-link">Fitur Aplikasi</a></li>
+            <li><a href="/#integrasi-google" class="footer-link">Integrasi Google Sheets</a></li>
+            <li><a href="/contact/" class="footer-link">Kontak Dukungan</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Legal & Kepatuhan</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy/" class="footer-link">Kebijakan Privasi (Privacy)</a></li>
+            <li><a href="/terms/" class="footer-link" style="color: var(--primary-blue);">Syarat Layanan (Terms)</a></li>
+            <li><a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer" class="footer-link">Google Limited Use Policy &nearr;</a></li>
+            <li><a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer" class="footer-link">Kelola Izin Akun Google &nearr;</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Dukungan Pengembang</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">
+            Pengembang: <strong data-config="developer.name" style="color: var(--text-primary);">Avrizal Rendi Prayoga</strong>
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">
+            Email: <a href="mailto:avrizalrendiprayoga@gmail.com" style="color: var(--highlight-ice);">avrizalrendiprayoga@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Presora. Seluruh hak cipta dilindungi undang-undang.
+        </div>
+        <div style="font-size: 0.775rem;">
+          Syarat Layanan ini menetapkan pedoman penggunaan aplikasi yang aman dan bertanggung jawab.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/assets/js/config.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

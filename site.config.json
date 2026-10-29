@@ -1,0 +1,29 @@
+{
+  "appName": "Presora",
+  "tagline": "Attendance, Organized.",
+  "shortDescription": "Aplikasi presensi digital berbasis Flutter yang modern, ringan, dan terstruktur dengan integrasi langsung ke Google Sheets & Google Drive milik pengguna.",
+  "version": "1.0.0",
+  "developer": {
+    "name": "Avrizal Rendi Prayoga",
+    "handle": "avrzll",
+    "supportEmail": "avrizalrendiprayoga@gmail.com",
+    "role": "Presora Creator & Lead Developer",
+    "location": "Indonesia",
+    "githubUrl": "https://github.com/avrzll"
+  },
+  "urls": {
+    "domain": "https://presora.pages.dev",
+    "home": "/",
+    "privacy": "/privacy/",
+    "terms": "/terms/",
+    "contact": "/contact/",
+    "googleRevokeUrl": "https://myaccount.google.com/permissions",
+    "googleUserPolicyUrl": "https://developers.google.com/terms/api-services-user-data-policy"
+  },
+  "policyDates": {
+    "effectiveDate": "29 Oktober 2026",
+    "lastUpdated": "29 Oktober 2026",
+    "effectiveDateEn": "October 29, 2026",
+    "lastUpdatedEn": "October 29, 2026"
+  }
+}
