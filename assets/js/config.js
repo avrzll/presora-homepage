@@ -5,7 +5,7 @@
  * URL domain, dan kebijakan privasi aplikasi Presora.
  * 
  * CATATAN UNTUK DEVELOPER SEBELUM PUBLIKASI / GOOGLE OAUTH:
- * 1. Ganti 'domain' dengan domain final Anda (misal: https://presora.pages.dev atau https://presora.app).
+ * 1. Ganti 'domain' dengan domain final Anda (misal: https://presora.avridev.my.id atau https://presora.app).
  * 2. Pastikan 'supportEmail' adalah email aktif yang didaftarkan di Google Cloud Console OAuth Consent Screen.
  * 3. Tanggal kebijakan dapat diperbarui jika ada revisi ketentuan.
  */
@@ -31,7 +31,7 @@ const PRESORA_CONFIG = {
   // Placeholder default menggunakan Cloudflare Pages.
   // Harap ubah ke custom domain Anda jika sudah dikonfigurasi di Cloudflare Pages.
   urls: {
-    domain: "https://presora.pages.dev",
+    domain: "https://presora.avridev.my.id",
     home: "/",
     privacy: "/privacy/",
     terms: "/terms/",
@@ -93,3 +93,4 @@ const PRESORA_CONFIG = {
 if (typeof module !== "undefined" && module.exports) {
   module.exports = PRESORA_CONFIG;
 }
+

@@ -70,7 +70,7 @@ Seluruh informasi kontak, tanggal efektif, tautan halaman, dan cakupan OAuth dik
 ### Informasi Pengembang yang Digunakan:
 - **Nama Pengembang:** Avrizal Rendi Prayoga
 - **Email Dukungan Resmi:** `avrizalrendiprayoga@gmail.com`
-- **Placeholder Domain:** `https://presora.pages.dev` (Ubah ke domain kustom Anda setelah pembelian / konfigurasi domain)
+- **Placeholder Domain:** `https://presora.avridev.my.id` (Ubah ke domain kustom Anda setelah pembelian / konfigurasi domain)
 - **Tanggal Kebijakan:** 29 Oktober 2026
 
 ---
@@ -182,3 +182,4 @@ Lakukan deploy ulang perubahan tersebut.
 - Website ini **tidak memuat tombol login palsu** atau simulasi interaksi Google karena hal tersebut dilarang oleh Google OAuth review team.
 - Website ini **tidak mengklaim bahwa aplikasi telah diverifikasi** sebelum Google menyelesaikan peninjauan resmi.
 - Arsitektur Presora sepenuhnya transparan: tidak ada database perantara milik pihak ketiga, dan semua data berada di bawah kendali penuh Google Drive pengguna.
+
